@@ -66,6 +66,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .wrapper-block-text {
@@ -77,7 +78,6 @@
   width: 500%;
   height: 100%;
   display: flex;
-  background: red;
 }
 
 .block-text p {
@@ -107,27 +107,7 @@
 .nav-block:hover {
   background-color: #fff;
 }
-.nav-block:active {
+.nav-block:focus {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid #71abfe;
 }
-.nav-block:active {
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #71abfe;
-}
-
-/* #s1:checked ~ .st1 {
-  margin-left: 0;
-}
-#s2:checked ~ .st1 {
-  margin-left: -20%;
-}
-#s3:checked ~ .st1 {
-  margin-left: -40%;
-}
-#s4:checked ~ .st1 {
-  margin-left: -60%;
-}
-#s5:checked ~ .st1 {
-  margin-left: -80%;
-} */
