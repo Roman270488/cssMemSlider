@@ -13,7 +13,7 @@
 }
 .slider {
   overflow: hidden;
-  max-width: 1000px;
+  max-width: 60rem;
   height: auto;
   background-color: #25282a;
   border: 2em solid #25282a;
@@ -71,7 +71,7 @@ input {
 
 .wrapper-block-text {
   overflow: hidden;
-  max-width: 300px;
+  max-width: 50%;
   height: auto;
 }
 .block-text {
