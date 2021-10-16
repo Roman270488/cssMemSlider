@@ -13,12 +13,12 @@
 }
 .slider {
   overflow: hidden;
-  max-width: 604px;
+  max-width: 1000px;
   height: auto;
   background-color: #25282a;
-  border: 20px solid #25282a;
+  border: 2em solid #25282a;
 }
-.input-style {
+input {
   display: none;
 }
 
@@ -31,7 +31,7 @@
 
 .slider-items .item {
   width: 20%;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .slider-items .item img {
@@ -92,22 +92,70 @@
   display: flex;
 }
 .slider-nav .slider-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  /* margin-left: 7px; */
+  cursor: pointer;
+}
+
+.nav-block {
   width: 10px;
   height: 10px;
-  margin-left: 7px;
-}
-.nav-block {
-  width: 100%;
-  height: 100%;
   background-color: #71abfe;
   border-radius: 50%;
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.nav-block:hover {
+.slider-nav-item:hover .nav-block {
   background-color: #fff;
 }
-.nav-block:focus {
-  background-color: rgba(255, 255, 255, 0);
+
+#s1:checked ~ .wrap-text-control .slider-nav .sni1 .nav-block,
+#s2:checked ~ .wrap-text-control .slider-nav .sni2 .nav-block,
+#s3:checked ~ .wrap-text-control .slider-nav .sni3 .nav-block,
+#s4:checked ~ .wrap-text-control .slider-nav .sni4 .nav-block,
+#s5:checked ~ .wrap-text-control .slider-nav .sni5 .nav-block {
+  background-color: transparent;
   border: 2px solid #71abfe;
+}
+#s1:checked ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block,
+#s2:checked ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block,
+#s3:checked ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block,
+#s4:checked ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block,
+#s5:checked ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block {
+  border-color: #fff;
+}
+#s1:active ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block,
+#s2:active ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block,
+#s3:active ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block,
+#s4:active ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block,
+#s5:active ~ .wrap-text-control .slider-nav .slider-nav-item:hover .nav-block {
+  background-color: #fff;
+  border: 2px solid #71abfe;
+}
+
+@media (max-width: 812px) {
+  .wrap-text-control {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .slider-nav {
+    margin-bottom: 20px;
+  }
+  .wrapper-block-text {
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .block-text p {
+    font: 300 18px/20px arial;
+  }
+}
+@media (max-width: 345px) {
+  .block-text p {
+    font: 300 14px/16px arial;
+    text-align: center;
+  }
 }
