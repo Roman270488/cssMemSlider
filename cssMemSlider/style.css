@@ -102,8 +102,8 @@ input {
 }
 
 .nav-block {
-  width: 0.6rem;
-  height: 0.6rem;
+  width: 0.62rem;
+  height: 0.61rem;
   background-color: #71abfe;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
